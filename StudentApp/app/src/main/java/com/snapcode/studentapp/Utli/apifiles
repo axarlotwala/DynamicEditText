@@ -1,0 +1,18 @@
+
+
+https://e7e2f75a.ngrok.io/
+
+# Route for fetching data of all student
+@app.route("/api/student", methods=['GET'])
+
+# Route for create record of student
+@app.route("/api/student", methods=['POST'])
+
+#route for getting detail of particular student
+@app.route("/api/student/<roll_no>", methods=["GET"])
+
+# Route for update record of particular student
+@app.route("/api/student/<roll_no>", methods=["PUT"])
+
+# Delete record of particular student
+@app.route("/api/student/<roll_no>", methods=["DELETE"])
